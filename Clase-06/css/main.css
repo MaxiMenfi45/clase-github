@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Propiedades del padre*/
+
+.padre{
+    display: grid;
+   grid-template-columns: 2fr 1fr ;
+   grid-template-rows: 200px 400px;
+   gap: 10px;
+
+}
+
+/*Propiedades de los hijos*/
+
+.hijo1{
+    background-color: rgb(187, 255, 0);
+}
+
+.hijo2{
+    background-color: rgb(149, 0, 255);
+}
+
+.hijo3{
+    background-color: rgb(111, 255, 0);
+}
+.hijo4{
+    background-color: aquamarine;
+}
+
+/*Ejemplo 2*/
+
+.ejemplo{
+    height: 500px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    justify-items: center;
+    align-items: center ;
+}
+
+/*Propiedades de los hijos*/
+
+.imagen-1{
+    justify-self:end ;
+    align-items: flex-end;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+
+    /*Areas de html*/
+
+    grid-template-areas: 
+    "header header header"
+    "main main section"
+    "footer footer footer"
+    
+    
+    ;
+}
+
+
+/*Propiedades de Hijos*/
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+main{
+    background-color: rgb(203, 16, 16);
+    grid-area: main;
+}
+
+section{
+    background-color: blue;
+    grid-area: section;
+}
+
+footer{
+    background-color: bisque;
+    grid-area: footer;
+}
